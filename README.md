@@ -7,7 +7,7 @@ chmod +x ./startup.sh
 # Run Amazon CLI
 docker run -it --rm -v ${PWD}:/work -w /work --entrypoint ./startup.sh amazon/aws-cli:2.0.43
 
-# AWS cli configure
+# aws cli configure
 aws configure
 
 # Install Terraform onto the container
@@ -22,7 +22,6 @@ I install using the "Linux" and "Amazon Linux" options
 `terraform -v` should work after installing correctly
 
 # Create the terraform scripts
-
 - create `main.tf`
 - create `variables.tf`
 
@@ -39,6 +38,7 @@ https://learn.hashicorp.com/collections/terraform/aws-get-started?utm_source=ter
 ...
 
 # Continue adding terraform code to main.tf
+...
 
 # Add .git
 yum -y install git

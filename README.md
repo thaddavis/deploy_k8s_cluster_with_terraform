@@ -2,6 +2,7 @@
 https://github.com/marcel-dempers/docker-development-youtube-series/tree/master/kubernetes/cloud/amazon/terraform
 
 # make startup script executable
+chmod +x ./startup.sh
 
 # Run Amazon CLI
 docker run -it --rm -v ${PWD}:/work -w /work --entrypoint ./startup.sh amazon/aws-cli:2.0.43
@@ -31,12 +32,13 @@ https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest
 https://registry.terraform.io/modules/terraform-aws-modules/eks/aws/latest
 https://learn.hashicorp.com/collections/terraform/aws-get-started?utm_source=terraform_io_download
 
-# Continue adding terraform code to `main.tf` and `variables.tf`
+# Continue adding terraform code to main.tf and variables.tf
 ...
 
-# Create `outputs.tf`
+# Create outputs.tf file
+...
 
-# Continue adding terraform code to `main.tf`
+# Continue adding terraform code to main.tf
 
 # Add .git
 yum -y install git
